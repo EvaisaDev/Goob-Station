@@ -7,14 +7,14 @@
   physicalDesc: opaque
   color: "#00ffff"
   flavor: cyan
-  metabolisms: # Why the fuck are you drinking ink stupid
+  metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -25,11 +25,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -44,12 +44,12 @@
   flavor: magenta
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -60,11 +60,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -79,12 +79,12 @@
   flavor: yellow
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -95,11 +95,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -114,12 +114,12 @@
   flavor: black
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -130,11 +130,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -149,12 +149,12 @@
   flavor: cyan
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -165,11 +165,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -184,12 +184,12 @@
   flavor: magenta
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -200,11 +200,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -219,12 +219,12 @@
   flavor: yellow
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -235,11 +235,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
@@ -254,12 +254,12 @@
   flavor: black
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.3
+            Poison: 0.1
             Asphyxiation: 0.05
         conditions:
         - !type:OrganType
@@ -270,11 +270,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.02
+        probability: 0.01
         paralyzeTime: 2
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 0.05
         conditions:
         - !type:OrganType
           type: Yowie
