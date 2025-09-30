@@ -149,6 +149,10 @@
   - type: ContainerContainer
     containers:
       Paper: !type:ContainerSlot
+      InkC: !type:ContainerSlot # Goobstation - Added ink slots
+      InkM: !type:ContainerSlot
+      InkY: !type:ContainerSlot
+      InkK: !type:ContainerSlot
   - type: AutomationSlots # Goobstation
     slots:
     - !type:AutomatedItemSlot
@@ -164,6 +168,31 @@
     receiveFrequencyId: Fax
     transmitFrequencyId: Fax
   - type: RequireProjectileTarget
+  - type: PrinterInk # Goobstation - Printer Ink
+    slotC:
+      name: Cyan Cartridge
+      startingItem: CartridgeInkCyan
+      whitelist:
+        tags: [ InkCartridgeC ]
+    slotM:
+      name: Magenta Cartridge
+      startingItem: CartridgeInkMagenta
+      whitelist:
+        tags: [ InkCartridgeM ]
+    slotY:
+      name: Yellow Cartridge
+      startingItem: CartridgeInkYellow
+      whitelist:
+        tags: [ InkCartridgeY ]
+    slotK:
+      name: Black Cartridge
+      startingItem: CartridgeInkBlack
+      whitelist:
+        tags: [ InkCartridgeK ]
+    unitsPerCharacter: 0.05
+    requireInkToPrint: false
+
+
 
 # Special
 - type: entity

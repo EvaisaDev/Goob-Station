@@ -669,3 +669,15 @@
 
 - type: Tag
   id: DisposableBattery
+
+- type: Tag
+  id: InkCartridgeC
+
+- type: Tag
+  id: InkCartridgeM
+
+- type: Tag
+  id: InkCartridgeY
+
+- type: Tag
+  id: InkCartridgeK

@@ -8,10 +8,10 @@
   },
   "states": [
     {
-      "name": "printer_ink_base"
+      "name": "base"
     },
     {
-      "name": "printer_ink_color"
+      "name": "color"
     }
   ]
 }

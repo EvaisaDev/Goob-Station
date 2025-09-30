@@ -165,6 +165,7 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly EmagSystem _emag = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!; // Goobstation
     [Dependency] private readonly TransformSystem _transform = default!; // Goobstation
+    [Dependency] private readonly PrinterInkSystem _inkSystem = default!; // Goobstation - Printer Ink
 
     private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
@@ -748,7 +749,10 @@ public sealed class FaxSystem : EntitySystem
 
         if (TryComp<PaperComponent>(printed, out var paper))
         {
-            _paperSystem.SetContent((printed, paper), printout.Content);
+            // Goobstation Start - Printer Ink
+            var adjusted = _inkSystem.AdjustAndConsume(uid, printout.Content);
+            _paperSystem.SetContent((printed, paper), adjusted);
+            // Goobstation End
 
             // Apply stamps
             if (printout.StampState != null)

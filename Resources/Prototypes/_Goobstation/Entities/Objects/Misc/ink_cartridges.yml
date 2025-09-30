@@ -1,0 +1,125 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BaseItem
+  id: CartridgeInkBase
+  abstract: true
+  name: ink cartridge
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    layers:
+      - state: base
+      - state: color
+        color: "#ffffff"
+  - type: SolutionContainerManager
+    solutions:
+      ink:
+        maxVol: 100
+  - type: DrainableSolution
+    solution: ink
+  - type: ExaminableSolution
+    solution: ink
+  - type: DrawableSolution
+    solution: ink
+  - type: InjectableSolution
+    solution: ink
+  - type: Drink
+    solution: ink
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+
+- type: entity
+  parent: CartridgeInkBase
+  id: CartridgeInkCyan
+  name: cyan ink cartridge
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    layers:
+      - state: base
+      - state: color
+        color: "#00bcd4"
+  - type: InkCartridge
+    solutionName: ink
+  - type: SolutionContainerManager
+    solutions:
+      ink:
+        maxVol: 100
+        reagents:
+        - ReagentId: InkCyan
+          Quantity: 100
+  - type: Tag
+    tags: [ InkCartridgeC ]
+
+- type: entity
+  parent: CartridgeInkBase
+  id: CartridgeInkMagenta
+  name: magenta ink cartridge
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    layers:
+      - state: base
+      - state: color
+        color: "#e91e63"
+  - type: InkCartridge
+    solutionName: ink
+  - type: SolutionContainerManager
+    solutions:
+      ink:
+        maxVol: 100
+        reagents:
+        - ReagentId: InkMagenta
+          Quantity: 100
+  - type: Tag
+    tags: [ InkCartridgeM ]
+
+- type: entity
+  parent: CartridgeInkBase
+  id: CartridgeInkYellow
+  name: yellow ink cartridge
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    layers:
+      - state: base
+      - state: color
+        color: "#ffeb3b"
+  - type: InkCartridge
+    solutionName: ink
+  - type: SolutionContainerManager
+    solutions:
+      ink:
+        maxVol: 100
+        reagents:
+        - ReagentId: InkYellow
+          Quantity: 100
+  - type: Tag
+    tags: [ InkCartridgeY ]
+
+- type: entity
+  parent: CartridgeInkBase
+  id: CartridgeInkBlack
+  name: black ink cartridge
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    layers:
+      - state: base
+      - state: color
+        color: "#222222"
+  - type: InkCartridge
+    solutionName: ink
+  - type: SolutionContainerManager
+    solutions:
+      ink:
+        maxVol: 150
+        reagents:
+        - ReagentId: InkBlack
+          Quantity: 150
+  - type: Tag
+    tags: [ InkCartridgeK ]
+
