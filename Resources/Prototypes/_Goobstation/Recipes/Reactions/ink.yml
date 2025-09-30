@@ -1,9 +1,9 @@
 - type: reaction
   id: InkCyanOffbrand
   reactants:
-    Iron:
-      amount: 5
-    Cyanide:
+    Copper:
+      amount: 2
+    Ammonia:
       amount: 3
     Chlorine:
       amount: 1
@@ -21,6 +21,8 @@
       amount: 3
     Acetone:
       amount: 2
+    SulfuricAcid:
+      amount: 1
     Oxygen:
       amount: 1
     Ethanol:
@@ -33,12 +35,12 @@
 - type: reaction
   id: InkYellowOffbrand
   reactants:
-    Aniline:
+    Iodine:
       amount: 3
-    NitricAcid:
+    SodiumHydroxide:
       amount: 2
-    Sodium:
-      amount: 1
+    Acetone:
+      amount: 2
     Ethanol:
       amount: 1
     Water:
@@ -51,6 +53,8 @@
   reactants:
     Oil:
       amount: 5
+    Carbon:
+      amount: 3
     Oxygen:
       amount: 2
     Ethanol:

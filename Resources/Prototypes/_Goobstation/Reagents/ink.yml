@@ -7,7 +7,7 @@
   physicalDesc: opaque
   color: "#00ffff"
   flavor: cyan
-  metabolisms:
+  metabolisms: # Why the fuck are you drinking ink stupid.
     Poison:
       metabolismRate: 0.2
       effects:
