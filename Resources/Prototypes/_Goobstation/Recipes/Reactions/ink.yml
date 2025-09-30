@@ -51,8 +51,6 @@
 - type: reaction
   id: InkBlackOffbrand
   reactants:
-    Oil:
-      amount: 5
     Carbon:
       amount: 3
     Oxygen:
