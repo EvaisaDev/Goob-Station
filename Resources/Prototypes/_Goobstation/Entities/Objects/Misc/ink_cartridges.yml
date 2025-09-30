@@ -4,7 +4,7 @@
   parent: BaseItem
   id: CartridgeInkBase
   abstract: true
-  name: ink cartridge
+  name: printer cartridge
   components:
   - type: Item
     size: Tiny
@@ -34,7 +34,7 @@
 - type: entity
   parent: CartridgeInkBase
   id: CartridgeInkCyan
-  name: cyan ink cartridge
+  name: cyan printer cartridge
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Misc/ink.rsi
@@ -57,7 +57,7 @@
 - type: entity
   parent: CartridgeInkBase
   id: CartridgeInkMagenta
-  name: magenta ink cartridge
+  name: magenta printer cartridge
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Misc/ink.rsi
@@ -80,7 +80,7 @@
 - type: entity
   parent: CartridgeInkBase
   id: CartridgeInkYellow
-  name: yellow ink cartridge
+  name: yellow printer cartridge
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Misc/ink.rsi
@@ -103,7 +103,7 @@
 - type: entity
   parent: CartridgeInkBase
   id: CartridgeInkBlack
-  name: black ink cartridge
+  name: black printer cartridge
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Misc/ink.rsi

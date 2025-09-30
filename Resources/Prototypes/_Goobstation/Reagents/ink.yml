@@ -3,27 +3,279 @@
 - type: reagent
   id: InkCyan
   name: cyan ink
-  desc: cyan pigment in a printable suspension.
+  desc: cyan pigment in a printable suspension. To be inserted in printer cartridges.
   physicalDesc: opaque
   color: "#00ffff"
+  flavor: cyan
+  metabolisms: # Why the fuck are you drinking ink stupid
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
 
 - type: reagent
   id: InkMagenta
   name: magenta ink
-  desc: magenta pigment in a printable suspension.
+  desc: magenta pigment in a printable suspension. To be inserted in printer cartridges.
   physicalDesc: opaque
   color: "#ff00ff"
+  flavor: magenta
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
 
 - type: reagent
   id: InkYellow
   name: yellow ink
-  desc: yellow pigment in a printable suspension.
+  desc: yellow pigment in a printable suspension. To be inserted in printer cartridges.
   physicalDesc: opaque
   color: "#ffff00"
+  flavor: yellow
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
 
 - type: reagent
   id: InkBlack
   name: black ink
-  desc: carbon black in a printable suspension.
+  desc: carbon black in a printable suspension. To be inserted in printer cartridges.
   physicalDesc: opaque
   color: "#000000"
+  flavor: black
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+
+- type: reagent
+  id: InkCyanOffbrand
+  name: homemade cyan ink
+  desc: Homemade cyan pigment in a printable suspension. To be inserted in printer cartridges. Requires printer to be hacked in order to be useful.
+  physicalDesc: transparent
+  color: "#00ffff"
+  flavor: cyan
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+
+- type: reagent
+  id: InkMagentaOffbrand
+  name: homemade magenta ink
+  desc: Homemade magenta pigment in a printable suspension. To be inserted in printer cartridges. Requires printer to be hacked in order to be useful.
+  physicalDesc: opaque
+  color: "#ff00ff"
+  flavor: magenta
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+
+- type: reagent
+  id: InkYellowOffbrand
+  name: homemade yellow ink
+  desc: Homemade yellow pigment in a printable suspension. To be inserted in printer cartridges. Requires printer to be hacked in order to be useful.
+  physicalDesc: opaque
+  color: "#ffff00"
+  flavor: yellow
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+
+- type: reagent
+  id: InkBlackOffbrand
+  name: homemade black ink
+  desc: Homemade carbon black in a printable suspension. To be inserted in printer cartridges. Requires printer to be hacked in order to be useful.
+  physicalDesc: opaque
+  color: "#000000"
+  flavor: black
+  metabolisms:
+    Poison:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.3
+            Asphyxiation: 0.05
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+      - !type:Paralyze
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false
+        probability: 0.02
+        paralyzeTime: 2
+      - !type:Emote
+        emote: Gasp
+        probability: 0.1
+        conditions:
+        - !type:OrganType
+          type: Yowie
+          shouldHave: false

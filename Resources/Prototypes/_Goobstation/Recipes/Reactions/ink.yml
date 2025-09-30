@@ -1,0 +1,61 @@
+- type: reaction
+  id: InkCyanOffbrand
+  reactants:
+    Iron:
+      amount: 5
+    Cyanide:
+      amount: 3
+    Chlorine:
+      amount: 1
+    Ethanol:
+      amount: 1
+    Water:
+      amount: 5
+  products:
+    InkCyanOffbrand: 10
+
+- type: reaction
+  id: InkMagentaOffbrand
+  reactants:
+    Phenol:
+      amount: 3
+    Acetone:
+      amount: 2
+    Oxygen:
+      amount: 1
+    Ethanol:
+      amount: 1
+    Water:
+      amount: 5
+  products:
+    InkMagentaOffbrand: 10
+
+- type: reaction
+  id: InkYellowOffbrand
+  reactants:
+    Aniline:
+      amount: 3
+    NitricAcid:
+      amount: 2
+    Sodium:
+      amount: 1
+    Ethanol:
+      amount: 1
+    Water:
+      amount: 5
+  products:
+    InkYellowOffbrand: 10
+
+- type: reaction
+  id: InkBlackOffbrand
+  reactants:
+    Oil:
+      amount: 5
+    Oxygen:
+      amount: 2
+    Ethanol:
+      amount: 1
+    Water:
+      amount: 5
+  products:
+    InkBlackOffbrand: 10

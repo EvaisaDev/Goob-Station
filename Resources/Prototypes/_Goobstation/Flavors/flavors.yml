@@ -115,3 +115,23 @@
   id: chuddy
   flavorType: Base
   description: flavor-base-chuddy
+
+- type: flavor
+  id: cyan
+  flavorType: Base
+  description: flavor-base-cyan-ink
+
+- type: flavor
+  id: magenta
+  flavorType: Base
+  description: flavor-base-magenta-ink
+
+- type: flavor
+  id: yellow
+  flavorType: Base
+  description: flavor-base-yellow-ink
+
+- type: flavor
+  id: black
+  flavorType: Base
+  description: flavor-base-black-ink

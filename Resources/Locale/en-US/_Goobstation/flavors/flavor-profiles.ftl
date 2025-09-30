@@ -20,3 +20,7 @@ flavor-base-old = old
 flavor-base-robust = robust
 flavor-complex-unicorntears = like unicorn tears
 flavor-base-chuddy = chuddy
+flavor-base-cyan-ink = blue
+flavor-base-magenta-ink = pink
+flavor-base-yellow-ink = yellow
+flavor-base-black-ink = black
