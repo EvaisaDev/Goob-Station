@@ -19,6 +19,6 @@
     sprite: _Goobstation/Objects/Misc/ink.rsi
     state: base
   product: CratePrinterInk
-  cost: 3000
+  cost: 3500
   category: cargoproduct-category-name-food
   group: market
