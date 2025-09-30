@@ -12,3 +12,13 @@
   cost: 1000
   category: cargoproduct-category-name-service
   group: market
+
+- type: cargoProduct
+  id: PrinterInk
+  icon:
+    sprite: _Goobstation/Objects/Misc/ink.rsi
+    state: base
+  product: CratePrinterInk
+  cost: 3000
+  category: cargoproduct-category-name-food
+  group: market

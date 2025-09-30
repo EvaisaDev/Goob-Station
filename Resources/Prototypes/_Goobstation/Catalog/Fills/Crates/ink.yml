@@ -1,0 +1,16 @@
+- type: entity
+  id: CratePrinterInk
+  parent: CratePlastic
+  name: printer ink crate
+  description: More expensive than it should be, keeps the bureaucracy running.
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeInkCyan
+      amount: 3
+    - id: CartridgeInkMagenta
+      amount: 3
+    - id: CartridgeInkYellow
+      amount: 3
+    - id: CartridgeInkBlack
+      amount: 3
